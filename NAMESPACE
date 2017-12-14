@@ -1,0 +1,3 @@
+import("rClr")
+export(LexToForm, LexToOutputText, THSeg)
+#exportPattern("^[[:alpha:]]+")
