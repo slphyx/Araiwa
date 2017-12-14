@@ -18,7 +18,7 @@
   }
   #load the main dll files
   loadAssembly('AraiwaForm.dll')
-  loadAssembly('awaiwa.dll')
+  loadAssembly('araiwa.dll')
   
   
 }
