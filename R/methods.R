@@ -11,7 +11,7 @@ LexToForm <- function(){
 # and return it to R
 LexToOutputText <- function(sep = TRUE){
   if(file.exists("TEMP_LEXTOFILE.DAT")){
-    output.text <- suppressWarnings(readLines("TEMP_LEXTOFILE.DAT", encoding = "UTF-8"))
+    output.text <- readLines("TEMP_LEXTOFILE.DAT", encoding = "UTF-8")
   }else{
     cat('Cannot load TEMP_LEXTOFILE.DAT.\n')
     return(NULL)
