@@ -17,8 +17,8 @@
     }
   }
   #load the main dll files
-  rClr::clrLoadAssembly('AraiwaForm.dll')
-  rClr::clrLoadAssembly('awaiwa.dll')
+  loadAssembly('AraiwaForm.dll')
+  loadAssembly('awaiwa.dll')
   
   
 }
