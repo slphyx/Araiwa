@@ -1,0 +1,10 @@
+Package: Araiwa
+Type: Package
+Title: A simple R wrapper function for LexTo.
+Version: 0.0.1
+Author: Sompob Saralamba
+Maintainer: Sompob Saralamba <saralamba@gmail.com>
+Description: R wrapper functions for LexTo. LexTo is a Thai word segmentation program written by Choochart Haruechaiyasak. Please visit http://www.sansarn.com/lexto/ for more details about LexTo.
+License: GNU2 License
+LazyData: TRUE
+
