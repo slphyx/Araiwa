@@ -11,7 +11,7 @@ LexToForm <- function(){
 # and return it to R
 LexToOutputText <- function(sep = TRUE){
   if(file.exists("TEMP_LEXTOFILE.DAT")){
-    output.text <- readLines("TEMP_LEXTOFILE.DAT", encoding = "UTF-8")
+    output.text <- suppressWarnings(readLines("TEMP_LEXTOFILE.DAT", encoding = "UTF-8"))
   }else{
     cat('Cannot load TEMP_LEXTOFILE.DAT.\n')
     return(NULL)
@@ -41,8 +41,12 @@ WriteOutputText <- function(msg, filename) {
 
 
 #TH segmentation
-THSeg <- function(msg){
-  outtxt <- rClr::clrCallStatic('araiwa.Araiwa','THSeg',as.character(msg))
+THSeg <- function(msg, dic.path = NULL){
+  if(is.null(dic.path)){
+    libLocation<-system.file(package='Araiwa')
+    dic.path <- file.path(libLocation,'dict','lexitron.txt')
+  }
+  outtxt <- rClr::clrCallStatic('araiwa.Methods','THSeg',as.character(msg),as.character(dic.path))
   LexToOutputText(sep = T)
 }
 
