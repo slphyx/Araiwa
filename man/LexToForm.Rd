@@ -16,7 +16,6 @@ LexToForm()
 \arguments{
 %%     ~~Describe \code{x} here~~
 }
-}
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
