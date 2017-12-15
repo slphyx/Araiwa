@@ -20,5 +20,15 @@
   loadAssembly('AraiwaForm.dll')
   loadAssembly('araiwa.dll')
   
+  #check if the dictionary exists in libs
+  installDict <- function(dictfile){
+    dictpath <- file.path(libpath,dictfile)
+    if(!file.exists(dictpath)){
+      if(getRversion() < "3.3.0") setInternet2()
+      download.file("https://github.com/slphyx/Araiwa/blob/master/inst/dict/lexitron.txt",dictpath,quiet = TRUE)
+    }
+  }
+  
+  installDict('lexitron.txt')
   
 }
