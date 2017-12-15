@@ -21,3 +21,13 @@ LexToForm()
 
 
 คำสั่ง LexToOutputText() สำหรับรับค่าจาก application form กลับมาที่ R
+
+## วิธีการติดตั้ง rClr 
+ให้โหลด zip (rClr 0.7-4 windows binary package) จาก[https://rclr.codeplex.com/downloads/get/1441301](https://rclr.codeplex.com/downloads/get/1441301)
+
+จากนั้นก็พิมพ์ 
+```R
+install.packages(file.choose(), repos = NULL, type="source")
+```
+
+แล้วเลือกไฟล์ของ rClr ที่เพิ่งโหลดมาครับ
