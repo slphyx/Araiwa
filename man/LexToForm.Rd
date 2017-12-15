@@ -7,7 +7,7 @@ LexTo application in R
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-LexToForm will load the windows form of LexTo application. This application was written in C#.
+LexToForm will load the windows form of LexTo application. This application was written in C#. LexToForm requires "lexitron.txt" to be in the working directory.
 }
 \usage{
 LexToForm()

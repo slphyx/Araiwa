@@ -29,7 +29,7 @@
 
     }
   }
-  
+
   installDict('lexitron.txt')
   
 }
