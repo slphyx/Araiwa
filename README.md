@@ -9,7 +9,7 @@
 library(devtools)
 install_github("slphyx/Araiwa")
 ```
-![](http://www.sakngoi.com/wp-content/uploads/araiwa_test-768x461.gif)
+![](https://www.sakngoi.com/wp-content/uploads/araiwa_test-768x461.gif)
 
 # การใช้งาน
 คำสั่ง LexToForm() สำหรับโหลด application form
@@ -17,7 +17,7 @@ install_github("slphyx/Araiwa")
 library(Araiwa)
 LexToForm()
 ```
-![](http://www.sakngoi.com/wp-content/uploads/exlexto.png)
+![](https://www.sakngoi.com/wp-content/uploads/exlexto.png)
 
 
 คำสั่ง LexToOutputText() สำหรับรับค่าจาก application form กลับมาที่ R
