@@ -40,14 +40,14 @@ WriteOutputText <- function(msg, filename) {
 }
 
 
-#TH segmentation
-THSeg <- function(msg, dic.path = NULL){
-  if(is.null(dic.path)){
-    libLocation<-system.file(package='Araiwa')
-    dic.path <- file.path(libLocation,'dict','lexitron.txt')
-  }
-  outtxt <- rClr::clrCallStatic('araiwa.Methods','THSeg',as.character(msg),as.character(dic.path))
-  LexToOutputText(sep = T)
-}
+# #TH segmentation
+# THSeg <- function(msg, dic.path = NULL){
+#   if(is.null(dic.path)){
+#     libLocation<-system.file(package='Araiwa')
+#     dic.path <- file.path(libLocation,'dict','lexitron.txt')
+#   }
+#   outtxt <- rClr::clrCallStatic('araiwa.Methods','THSeg',as.character(msg),as.character(dic.path))
+#   LexToOutputText(sep = T)
+# }
 
 
