@@ -25,7 +25,7 @@
     dictpath <- file.path(libpath,dictfile)
     if(!file.exists(dictpath)){
       if(getRversion() < "3.3.0") setInternet2()
-      download.file("https://github.com/slphyx/Araiwa/blob/master/inst/dict/lexitron.txt",dictpath,quiet = TRUE)
+      download.file("https://raw.githubusercontent.com/slphyx/Araiwa/master/lexitron.txt",dictpath,quiet = TRUE)
     }
   }
   
