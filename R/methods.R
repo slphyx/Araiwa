@@ -2,6 +2,13 @@
 
 # load LexToForm application
 LexToForm <- function(){
+  #for now its requires the dict to be in the working dir
+  dictpath <- getwd()
+  if(!file.exists(file.path(dictpath,'lexitron.txt'))){
+    if(getRversion() < "3.3.0") setInternet2()
+    download.file("https://raw.githubusercontent.com/slphyx/Araiwa/master/inst/dict/lexitron.txt",'lexitron.txt',quiet = TRUE)
+  }
+  
   frm <- rClr::clrNew('testLexTo.LexTo')
   rClr::clrCall(frm,'Show')
 }
@@ -38,6 +45,7 @@ WriteOutputText <- function(msg, filename) {
   })
   
 }
+
 
 
 # #TH segmentation
