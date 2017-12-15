@@ -26,6 +26,7 @@
     if(!file.exists(dictpath)){
       if(getRversion() < "3.3.0") setInternet2()
       download.file("https://raw.githubusercontent.com/slphyx/Araiwa/master/inst/dict/lexitron.txt",dictpath,quiet = TRUE)
+
     }
   }
   
