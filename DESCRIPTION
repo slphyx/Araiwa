@@ -1,6 +1,6 @@
 Package: Araiwa
 Type: Package
-Title: A simple R wrapper function for LexTo.
+Title: LexTo application in R (Microsoft Windows ONLY).
 Version: 0.0.1
 Author: Sompob Saralamba
 Maintainer: Sompob Saralamba <saralamba@gmail.com>
