@@ -9,7 +9,7 @@
 library(devtools)
 install_github("slphyx/Araiwa")
 ```
-![](https://www.sakngoi.com/wp-content/uploads/araiwa_test-768x461.gif)
+![](https://www.sakngoi.com/wp-content/uploads/araiwa_test.gif)
 
 # การใช้งาน
 คำสั่ง LexToForm() สำหรับโหลด application form
